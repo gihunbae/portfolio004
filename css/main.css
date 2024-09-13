@@ -1,0 +1,312 @@
+@charset "UTF-8";
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+a{
+    text-decoration: none;
+}
+
+.modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: black;
+    z-index: 1000;
+    opacity: 0.5;
+}
+
+.white{
+    border-radius: 10px;
+    width: 550px;
+    height: 300px;
+    position: absolute;
+    z-index: 1010;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+}
+
+.Box{
+    display: none;
+}
+
+.whiteBox{
+    width: 80%;
+    height: 80%;
+    position: relative;
+
+}
+
+.whiteBox span{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.whiteBox p{
+    font-size: 17px;
+}
+
+#btn{
+    position: absolute;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    right: 0;
+}
+
+.logoBox{
+    width: 200px;
+    float: left;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.head nav{
+    width: 1200px;
+    height: 100px;
+    position: relative;
+
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 700px;
+}
+
+.head{
+    width: 100%;
+    height: 100px;
+
+}
+
+.mainMenu{
+    position: absolute;
+    width: calc(160px * 4);
+    right: 20px;
+    z-index: 10;
+    top: 20px;
+    height: 80px;
+    background-color: #333333;
+    display: flex;
+
+}
+
+.mainMenu>li>a{
+    background-color: rgb(200, 255, 133);
+    display: block;
+    text-align: center;
+    width: 160px;
+    line-height: 60px;
+    font-weight: bold;
+    font-size: 20px;
+    height: 60px;
+
+}
+
+.mainMenu>li:hover>a,
+.mainMenu>li>a:focus
+.mainMenu>li.on>a{
+    background-color: black;
+    color: white;
+}
+
+.subMenu{
+    display: none;
+    text-align: center;
+
+}
+
+.subMenu>li>a{
+    font-weight: bold;
+    background-color: rgb(255, 210, 158);
+    display: block;
+    width: 160px;
+    font-size: 18px;
+    line-height: 50px;
+    height: 50px;
+}
+
+.subMenu>li>a:hover{
+    background-color: black;
+    color: white;
+}
+
+.slide{
+    overflow: hidden;
+    width: 1200px;
+    height: 300px;
+    background-color: black;
+    display: flex;
+}
+
+.slide li{
+    position: relative;
+}
+
+
+.slide span{
+    background-color: #333333;
+    color: #ffffff;
+    opacity: 0.5;
+
+    padding: 10px 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    position: absolute;
+}
+
+.slide img{
+ 
+    display: flex;
+    height: 300px;
+}
+
+.content{
+    width: 1200px;
+    height: 200px;
+    background-color: turquoise;
+}
+
+.c1,.c2{
+    width: 400px;
+    height: 200px;
+    /* background-color: #333333; */
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+.c1Box,.c2Box{
+    width: 90%;
+    height: 80%;
+}
+
+.c2Box img:hover{
+    opacity: 0.7;
+}
+
+.c3{
+    background-color: #333333;
+    display: flex;
+    position: relative;
+}
+
+.c3 span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    opacity: 0.7;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.c1Box a{
+    border-bottom: solid 1px;
+    padding: 8px;
+    display: flex;
+    
+}
+
+.c2Box>ul{
+
+    border: solid 3px;
+    padding: 35px;
+    display: flex;
+}
+
+.c1Box>ul,.c2Box>ul{
+    margin-top: 23px;
+}
+
+.c1Box>span{
+   position: absolute;
+   margin-left: 10px;
+   margin-top: -11px;
+   border: 2px solid;
+   padding: 5px 10px;
+   border-bottom: none;
+    border-radius: 5px 5px 0 0;
+}
+
+.c2Box>span{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -12px;
+    border: 2px solid;
+    background-color: rgb(204, 238, 136);
+    padding: 5px 10px;
+
+     border-radius: 5px 5px 0 0;
+ }
+
+.first{
+    border-top: 2px solid;
+}
+
+.foot{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: relative;
+
+    z-index: 100;
+    /* background-color: blue; */
+}
+
+.footLogo{
+    width: 200px;
+    float: left;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 100;
+}
+
+.copy{
+    height: 100px;
+    width: 1200px;
+    
+    position: relative;
+ 
+    text-align: center;
+}
+
+.copy p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sns{
+    position: absolute;
+
+    height: 100px;
+    right: 10px;
+}
+
+#snsSelec{
+    margin-top: 25px;
+    font-size: 16px;
+    padding: 10px 20px
+}
